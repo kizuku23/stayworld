@@ -19,6 +19,16 @@ Stylesheet: 960px以上のモニタで適用
 .mb-lg {
   margin-bottom: 150px !important;
 }
-.pd-lg {
+.pb-lg {
   padding-bottom: 150px !important;
+}
+
+.popular {
+  &__item {
+    flex-basis: 25%;
+  }
+
+  &__img {
+    height: 335px;
+  }
 }

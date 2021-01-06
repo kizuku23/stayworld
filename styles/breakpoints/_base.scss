@@ -29,10 +29,10 @@ img {
 .mb-lg {
   margin-bottom: 80px !important;
 }
-.pd-sm {
+.pb-sm {
   padding-bottom: 16px !important;
 }
-.pd-lg {
+.pb-lg {
   padding-bottom: 80px !important;
 }
 .contents-width {
@@ -75,3 +75,52 @@ img {
   }
 }
 
+.popular {
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-color: $cBgGray;
+    }
+  }
+  &__header {
+    @extend .contents-width;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    @extend .flex;
+    @extend .contents-width;
+    @extend .pb-sm;
+  }
+
+  &__title {
+    @extend .font-md;
+    @extend .mb-sm;
+  }
+
+  &__btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  &__img {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    & > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
