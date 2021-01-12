@@ -31,5 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const so3 = new ScrollObserver('.nav-trigger', _navAnimation, {once: false});
+
+    new MobileMenu();
 });
 
