@@ -1299,17 +1299,23 @@ main {
   top: 70%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
-.side a,
-.side span {
+.side .tween-animate-title {
   color: black;
   text-decoration: none !important;
   margin: 0 40px;
   vertical-align: middle;
+  letter-spacing: 2px;
 }
 
 .side.left {
+  left: 50px;
+}
+
+.side.left.inview {
   left: 50px;
 }
 
@@ -1321,6 +1327,10 @@ main {
 }
 
 .side.right {
+  right: 50px;
+}
+
+.side.right.inview {
   right: 50px;
 }
 
